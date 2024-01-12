@@ -1,0 +1,86 @@
+{
+    "title": {
+        "title": "Updated sbs"
+    },
+
+    "nav": {
+        "nav0": "home",
+        "nav1": "About",
+        "nav2": "skating",
+        "nav3": "shop",
+        "nav4": "contact us"
+    },
+
+    "slide": {
+        "h0": "Update Skating Board School",
+        "h1": "Read More",
+        "h2": "Skating Board School",
+        "h3": "Read More",
+        "h4": "Skating Board School",
+        "h5": "Read More"
+    },
+
+    "ourclass": {
+        "a0": "Update Our Skating Class",
+        "a1": "There are many variations of passages of Lorem",
+        "a2": "Skateboard",
+        "a3": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
+        "a4": "Skateboard",
+        "a5": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
+        "a6": "Update Skateboard",
+        "a7": "Update There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations"
+    },
+
+    "about": {
+        "b0": "Update About Skating school",
+        "b1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
+        "b2": "Update Read More"
+    },
+
+    "skating": {
+        "c0": "Update Skating Video",
+        "c1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered",
+        "c2": "Update See More",
+        "c3": "Update See More",
+        "c4": "Update See More"
+    },
+
+    "shop": {
+        "s0": "Our Skate Shop",
+        "s1": "Update There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
+        "s3": "Buy Now"
+    },
+
+    "testimonial": {
+        "t0": "Update Testimonial",
+        "t1": "Update Jone Lo",
+        "t2": "Humour, or randomised words which don't look even slightly believable. If you are",
+        "t3": "Update Michale",
+        "t4": "Humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure",
+        "t5": "Update Disol",
+        "t6": "Humour, or randomised words which don't look even slightly believable. If you are"
+    },
+
+    "footer": {
+        "f0": "Update Contact Us",
+        "f1": "Update Newsletter",
+        "f2": "Update Useful Link",
+        "f3": "Update 2020 All Rights Reserved. Design by Free HTML Templates"
+    },
+
+    "images": {
+        "img1": "images/logo.png",
+        "img2": "images/top_icon.png",
+        "img3": "images/banner_img.png",
+        "img4": "images/banner_img.png",
+        "img5": "images/banner_img.png",
+        "img6": "images/class1.png",
+        "img7": "images/class2.png",
+        "img8": "images/class3.png",
+        "img9": "images/about.png",
+        "img10": "images/sakt1.png",
+        "img11": "images/sakt2.png",
+        "img12": "images/sakt3.png",
+        "img13": "images/shop.png"
+    }
+}
