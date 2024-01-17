@@ -67,6 +67,15 @@
         "f2": "Update Useful Link",
         "f3": "Update 2020 All Rights Reserved. Design by Free HTML Templates"
     },
+    "color":{
+        "header":"grey",
+        "class":"red",
+        "about":"red",
+        "skating":"grey",
+        "shop":"red",
+        "testimonial":"red",
+        "footer":"red"
+     },
 
     "images": {
         "img1": "images/logo.png",

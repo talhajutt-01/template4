@@ -66,7 +66,16 @@ const img11 = document.getElementById('img11');
 const img12 = document.getElementById('img12');
 const img13 = document.getElementById('img13');
 
-const paragraph1 = document.getElementById('paragraph1');
+const g0 = document.getElementById('header');
+const g1 = document.getElementById('class');
+const g2 = document.getElementById('about');
+const g3 = document.getElementById('skating');
+const g4 = document.getElementById('shop');
+const g5 = document.getElementById('testimonial');
+const g6 = document.getElementById('footer');
+
+
+
 
 
 // Function to update content for a specific element
@@ -85,6 +94,11 @@ function updateContent(element, newValue) {
     // Update the src attribute of the image element
     imageElement.src = newSrc;
 }
+function updateBackgroundColor(element, newColor) {
+  // Update the background color for the element
+  element.style.backgroundColor = newColor;
+}
+
 
   
   // Fetch JSON data from the text file
@@ -142,6 +156,14 @@ function updateContent(element, newValue) {
             updateContent(f1, jsonData.footer.f1);
             updateContent(f2, jsonData.footer.f2);
             updateContent(f3, jsonData.footer.f3);
+
+            updateBackgroundColor(g0, jsonData.color.header);
+            updateBackgroundColor(g1, jsonData.color.class);
+            updateBackgroundColor(g2, jsonData.color.about);
+            updateBackgroundColor(g3, jsonData.color.skating);
+            updateBackgroundColor(g4, jsonData.color.shop);
+            updateBackgroundColor(g5, jsonData.color.testimonial);
+            updateBackgroundColor(g6, jsonData.color.footer);
 
             updateImageSrc(img1, jsonData.images.img1);
             updateImageSrc(img2, jsonData.images.img2);
