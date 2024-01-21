@@ -75,21 +75,5 @@
         "shop":"red",
         "testimonial":"red",
         "footer":"red"
-     },
-
-    "images": {
-        "img1": "images/logo.png",
-        "img2": "images/top_icon.png",
-        "img3": "images/banner_img.png",
-        "img4": "images/banner_img.png",
-        "img5": "images/banner_img.png",
-        "img6": "images/class1.png",
-        "img7": "images/class2.png",
-        "img8": "images/class3.png",
-        "img9": "images/about.png",
-        "img10": "images/sakt1.png",
-        "img11": "images/sakt2.png",
-        "img12": "images/sakt3.png",
-        "img13": "images/shop.png"
-    }
+     }
 }

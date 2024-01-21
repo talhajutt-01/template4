@@ -104,80 +104,90 @@ function updateBackgroundColor(element, newColor) {
   // Fetch JSON data from the text file
   function updatePageContent(pageName) {
     console.log('Updating content for page:', pageName);
-    fetch('t.txt')
-        .then(response => response.json())
-        .then(jsonData => {
+    const fetchJson1 = fetch('t.txt')
+    .then(response => response.json());
+
+// Fetch the second JSON file
+const fetchJson2 = fetch('image.txt')
+    .then(response => response.json());
+
+// Wait for both fetch operations to complete
+Promise.all([fetchJson1, fetchJson2])
+    .then(jsonDataArray => {
+        // Merge the data from both JSON files
+        const mergedData = Object.assign({}, ...jsonDataArray);
+
             // Update content based on the current page
-            updateContent(title, jsonData.title.title);
+            updateContent(title,mergedData.title.title);
 
-            updateLinkContent(nav0, jsonData.nav.nav0);
-            updateLinkContent(nav1, jsonData.nav.nav1);
-            updateLinkContent(nav2, jsonData.nav.nav2);
-            updateLinkContent(nav3, jsonData.nav.nav3);
+            updateLinkContent(nav0,mergedData.nav.nav0);
+            updateLinkContent(nav1,mergedData.nav.nav1);
+            updateLinkContent(nav2,mergedData.nav.nav2);
+            updateLinkContent(nav3,mergedData.nav.nav3);
 
-            updateContent(h0, jsonData.slide.h0);
-            updateContent(h1, jsonData.slide.h1);
-            updateContent(h2, jsonData.slide.h2);
-            updateContent(h3, jsonData.slide.h3);
-            updateContent(h4, jsonData.slide.h4);
-            updateContent(h5, jsonData.slide.h5);
+            updateContent(h0,mergedData.slide.h0);
+            updateContent(h1,mergedData.slide.h1);
+            updateContent(h2,mergedData.slide.h2);
+            updateContent(h3,mergedData.slide.h3);
+            updateContent(h4,mergedData.slide.h4);
+            updateContent(h5,mergedData.slide.h5);
             
-            updateContent(a0, jsonData.ourclass.a0);
-            updateContent(a1, jsonData.ourclass.a1);
-            updateContent(a2, jsonData.ourclass.a2);
-            updateContent(a3, jsonData.ourclass.a3);
-            updateContent(a4, jsonData.ourclass.a4);
-            updateContent(a5, jsonData.ourclass.a5);
-            updateContent(a6, jsonData.ourclass.a6);
-            updateContent(a7, jsonData.ourclass.a7);
+            updateContent(a0,mergedData.ourclass.a0);
+            updateContent(a1,mergedData.ourclass.a1);
+            updateContent(a2,mergedData.ourclass.a2);
+            updateContent(a3,mergedData.ourclass.a3);
+            updateContent(a4,mergedData.ourclass.a4);
+            updateContent(a5,mergedData.ourclass.a5);
+            updateContent(a6,mergedData.ourclass.a6);
+            updateContent(a7,mergedData.ourclass.a7);
 
-            updateContent(b0, jsonData.about.b0);
-            updateContent(b1, jsonData.about.b1);
-            updateContent(b2, jsonData.about.b2);
+            updateContent(b0,mergedData.about.b0);
+            updateContent(b1,mergedData.about.b1);
+            updateContent(b2,mergedData.about.b2);
             
-            updateContent(c1, jsonData.skating.c1);
-            updateContent(c2, jsonData.skating.c2);
-            updateContent(c3, jsonData.skating.c3);
-            updateContent(c4, jsonData.skating.c4);
+            updateContent(c1,mergedData.skating.c1);
+            updateContent(c2,mergedData.skating.c2);
+            updateContent(c3,mergedData.skating.c3);
+            updateContent(c4,mergedData.skating.c4);
 
-            updateContent(s0, jsonData.shop.s0);
-            updateContent(s1, jsonData.shop.s1);
-            updateContent(s3, jsonData.shop.s3);
+            updateContent(s0,mergedData.shop.s0);
+            updateContent(s1,mergedData.shop.s1);
+            updateContent(s3,mergedData.shop.s3);
             
-            updateContent(t0, jsonData.testimonial.t0);
-            updateContent(t1, jsonData.testimonial.t1);
-            updateContent(t2, jsonData.testimonial.t2);
-            updateContent(t3, jsonData.testimonial.t3);
-            updateContent(t4, jsonData.testimonial.t4);
-            updateContent(t5, jsonData.testimonial.t5);
-            updateContent(t6, jsonData.testimonial.t6);
+            updateContent(t0,mergedData.testimonial.t0);
+            updateContent(t1,mergedData.testimonial.t1);
+            updateContent(t2,mergedData.testimonial.t2);
+            updateContent(t3,mergedData.testimonial.t3);
+            updateContent(t4,mergedData.testimonial.t4);
+            updateContent(t5,mergedData.testimonial.t5);
+            updateContent(t6,mergedData.testimonial.t6);
 
-            updateContent(f0, jsonData.footer.f0);
-            updateContent(f1, jsonData.footer.f1);
-            updateContent(f2, jsonData.footer.f2);
-            updateContent(f3, jsonData.footer.f3);
+            updateContent(f0,mergedData.footer.f0);
+            updateContent(f1,mergedData.footer.f1);
+            updateContent(f2,mergedData.footer.f2);
+            updateContent(f3,mergedData.footer.f3);
 
-            updateBackgroundColor(g0, jsonData.color.header);
-            updateBackgroundColor(g1, jsonData.color.class);
-            updateBackgroundColor(g2, jsonData.color.about);
-            updateBackgroundColor(g3, jsonData.color.skating);
-            updateBackgroundColor(g4, jsonData.color.shop);
-            updateBackgroundColor(g5, jsonData.color.testimonial);
-            updateBackgroundColor(g6, jsonData.color.footer);
+            updateBackgroundColor(g0,mergedData.color.header);
+            updateBackgroundColor(g1,mergedData.color.class);
+            updateBackgroundColor(g2,mergedData.color.about);
+            updateBackgroundColor(g3,mergedData.color.skating);
+            updateBackgroundColor(g4,mergedData.color.shop);
+            updateBackgroundColor(g5,mergedData.color.testimonial);
+            updateBackgroundColor(g6,mergedData.color.footer);
 
-            updateImageSrc(img1, jsonData.images.img1);
-            updateImageSrc(img2, jsonData.images.img2);
-            updateImageSrc(img3, jsonData.images.img3);
-            updateImageSrc(img4, jsonData.images.img4);
-            updateImageSrc(img5, jsonData.images.img5);
-            updateImageSrc(img6, jsonData.images.img6);
-            updateImageSrc(img7, jsonData.images.img7);
-            updateImageSrc(img8, jsonData.images.img8);
-            updateImageSrc(img9, jsonData.images.img9);
-            updateImageSrc(img10, jsonData.images.img10);
-            updateImageSrc(img11, jsonData.images.img11);
-            updateImageSrc(img12, jsonData.images.img12);
-            updateImageSrc(img13, jsonData.images.img13);
+            updateImageSrc(img1,mergedData.images.img1);
+            updateImageSrc(img2,mergedData.images.img2);
+            updateImageSrc(img3,mergedData.images.img3);
+            updateImageSrc(img4,mergedData.images.img4);
+            updateImageSrc(img5,mergedData.images.img5);
+            updateImageSrc(img6,mergedData.images.img6);
+            updateImageSrc(img7,mergedData.images.img7);
+            updateImageSrc(img8,mergedData.images.img8);
+            updateImageSrc(img9,mergedData.images.img9);
+            updateImageSrc(img10,mergedData.images.img10);
+            updateImageSrc(img11,mergedData.images.img11);
+            updateImageSrc(img12,mergedData.images.img12);
+            updateImageSrc(img13,mergedData.images.img13);
 
             // Extract the filename from the path
             const fileName = pageName.split('/').pop();
