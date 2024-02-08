@@ -12,7 +12,7 @@
     },
 
     "slide": {
-        "h0": "Update Skating Board School",
+        "h0": "Skating Board School",
         "h1": "Read More",
         "h2": "Skating Board School",
         "h3": "Read More",
@@ -21,59 +21,59 @@
     },
 
     "ourclass": {
-        "a0": "Update Our Skating Class",
+        "a0": "Our Skating Class",
         "a1": "There are many variations of passages of Lorem",
         "a2": "Skateboard",
         "a3": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
         "a4": "Skateboard",
         "a5": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
-        "a6": "Update Skateboard",
-        "a7": "Update There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations"
+        "a6": "Skateboard",
+        "a7": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations"
     },
 
     "about": {
-        "b0": "Update About Skating school",
+        "b0": "About Skating school",
         "b1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
-        "b2": "Update Read More"
+        "b2": "Read More"
     },
 
     "skating": {
-        "c0": "Update Skating Video",
+        "c0": "Skating Video",
         "c1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered",
-        "c2": "Update See More",
-        "c3": "Update See More",
-        "c4": "Update See More"
-    },
-
-    "shop": {
+        "c2": "See More",
+        "c3": "See More",
+        "c4": "See More"
+    }, 
+      
+     "shop": {
         "s0": "Our Skate Shop",
-        "s1": "Update There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
+        "s1": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alterationThere are many variations",
         "s3": "Buy Now"
     },
 
     "testimonial": {
-        "t0": "Update Testimonial",
-        "t1": "Update Jone Lo",
+        "t0": "Testimonial",
+        "t1": "Jone Lo",
         "t2": "Humour, or randomised words which don't look even slightly believable. If you are",
-        "t3": "Update Michale",
+        "t3": "Michale",
         "t4": "Humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure",
-        "t5": "Update Disol",
+        "t5": "Disol",
         "t6": "Humour, or randomised words which don't look even slightly believable. If you are"
     },
 
     "footer": {
-        "f0": "Update Contact Us",
-        "f1": "Update Newsletter",
-        "f2": "Update Useful Link",
-        "f3": "Update 2020 All Rights Reserved. Design by Free HTML Templates"
+        "f0": "Contact Us",
+        "f1": "Newsletter",
+        "f2": "Useful Link",
+        "f3": "2020 All Rights Reserved. Design by Free HTML Templates"
     },
     "color":{
-        "header":"grey",
-        "class":"red",
-        "about":"red",
-        "skating":"grey",
-        "shop":"red",
-        "testimonial":"red",
-        "footer":"red"
+        "header":".",
+        "class":".",
+        "about":".",
+        "skating":".",
+        "shop":".",
+        "testimonial":".",
+        "footer":"."
      }
 }

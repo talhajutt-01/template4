@@ -471,16 +471,16 @@ ul.email li i {
      font-size: 15px;
      opacity: 1;
      border-radius: 50px;
-     top: 100%;
+     top: 50%;
 }
 
 #carouselExampleIndicators .carousel-control-prev {
-     left: 4%;
+     margin-left: -8px;
 }
 
 #carouselExampleIndicators .carousel-control-next {
-     right: inherit;
-     left: 10%;
+     right: 0px;
+    
 }
 
 #carouselExampleIndicators .carousel-control-next:focus,
@@ -697,7 +697,7 @@ ul.email li i {
      background: #f0390f;
      width: 72px;
      height: 72px;
-     top: 112%;
+     top: 50%;
      opacity: 1;
      font-size: 33px;
      border-radius: 40px;
@@ -705,11 +705,12 @@ ul.email li i {
 }
 
 #myCarousel a.carousel-control-prev {
-     left: 44%;
+     right: 100%;
+     margin-left: -70px;
 }
 
 #myCarousel a.carousel-control-next {
-     right: 44%;
+     left: 100%;
 }
 
 #myCarousel a.carousel-control-next:focus,
